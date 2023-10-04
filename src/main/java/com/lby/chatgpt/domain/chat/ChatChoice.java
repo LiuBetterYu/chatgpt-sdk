@@ -13,10 +13,10 @@ import java.io.Serializable;
 public class ChatChoice implements Serializable {
 
     private long index;
-
+    /** stream = true 请求参数里返回的属性是 delta */
     @JsonProperty("delta")
     private Message delta;
-
+    /** stream = false 请求参数里返回的属性是 delta */
     @JsonProperty("message")
     private Message message;
 

@@ -13,6 +13,7 @@ public class OpenAiResponse<T> implements Serializable {
 
     private String object;
     private List<T> data;
+    private Error error;
 
     @Data
     public class Error {
